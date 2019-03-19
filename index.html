@@ -157,15 +157,15 @@
         <h2>Menu</h2>
         <!--  tabs -->
         <div class="tabs">
-            <a href="#" class="tabs__buttons active">Starters</a>
-            <a href="#" class="tabs__buttons">Main Dishes</a>
-            <a href="#" class="tabs__buttons">Deserts</a>
-            <a href="#" class="tabs__buttons">Drinks</a>
+            <a href="#" class="tabs__buttons active" data-target="0">Starters</a>
+            <a href="#" class="tabs__buttons" data-target="1">Main Dishes</a>
+            <a href="#" class="tabs__buttons" data-target="2">Deserts</a>
+            <a href="#" class="tabs__buttons" data-target="3">Drinks</a>
         </div>
         <!-- tabs  content  -->
         <div class="tabs__content">
             <!--   tabs    1     -->
-            <div class="tabs__content-list active">
+            <div class="tabs__content-list">
                 <div class="tabs__content-left-content">
                     <p class="tabs__content-item">Smocked ricotta terrine -- <span>18$</span></p>
                     <p class="tabs__content-item">Frutters with ceviche -- <span>12$</span></p>
@@ -184,7 +184,7 @@
             </div>
 
             <!--   tabs    2     -->
-            <div class="tabs__content-list">
+            <div class="tabs__content-list" style="display: none;">
                 <div class="tabs__content-left-content">
                     <p class="tabs__content-item">Smocked ricotta terrine -- <span>12$</span></p>
                     <p class="tabs__content-item">Frutters with ceviche -- <span>12$</span></p>
@@ -199,7 +199,7 @@
             </div>
 
             <!--   tabs    3     -->
-            <div class="tabs__content-list">
+            <div class="tabs__content-list" style="display: none;">
                 <div class="tabs__content-left-content">
                     <p class="tabs__content-item">Smocked ricotta terrine -- <span>14$</span></p>
                     <p class="tabs__content-item">Frutters with ceviche -- <span>12$</span></p>
@@ -218,7 +218,7 @@
             </div>
 
             <!--   tabs    4     -->
-            <div class="tabs__content-list">
+            <div class="tabs__content-list" style="display: none;">
                 <div class="tabs__content-left-content">
                     <p class="tabs__content-item">Smocked ricotta terrine -- <span>20$</span></p>
                     <p class="tabs__content-item">Frutters with ceviche -- <span>15$</span></p>
@@ -234,8 +234,38 @@
     </div>
 </div>
 
+<!--  section    footer    -->
+<footer class="footer">
+    <div class="wrapper">
+        <h2>Contact</h2>
 
-
+        <!-- section contacts -->
+        <div class="contacts">
+            <div class="contacts__wrapper">
+                <div class="contacts__title">
+                    <h3>Veggie</h3>
+                    <p>3428 Magnolia Avenue</p>
+                    <p>Hackettstown, NJ 04870</p>
+                </div>
+                <div class="contacts__title">
+                    <h3>Reservation</h3>
+                    <a href="mailto:reservation@veggie.com" class="contacts__email">reservation@veggie.com</a>
+                    <a href="tel:48-205-505-40" class="contacts__tel">48-205-505-40</a>
+                </div>
+            </div>
+        </div>
+        <!-- form  -->
+        <div class="form">
+                <form class="form__wrapper">
+                    <h3>Contact Form</h3>
+                    <input type="text" name="name" class="input__name" placeholder="Name">
+                    <input type="email" name="email" class="input__email" placeholder="Email">
+                    <textarea name="message" class="input__message" placeholder="Message"></textarea>
+                    <button class="form__button">Send</button>
+                </form>
+            </div>
+        </div>
+</footer>
 
 
 
