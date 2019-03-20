@@ -51,6 +51,89 @@ ul {
   background-repeat: no-repeat;
 }
 
+//  mobile menu
+.mobile-menu {
+  background: rgba(60, 60, 80, .9);
+  position: absolute;
+  z-index: 2;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 1600px;
+  transition: .2s ease;
+}
+
+.mobile-menu_show {
+  left: 0;
+}
+
+.mobile__menu-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 70px 60px;
+}
+
+.menu__list-item {
+  padding-bottom: 50px;
+}
+
+.menu__list-link {
+  font-size: 20px;
+  color: #fff;
+  @include bold;
+
+  &:hover {
+    color: lighten(#fff, 50%);
+  }
+}
+
+//  burger  menu
+.header__menu-burger {
+  position: absolute;
+  right: 5%;
+  top: 8%;
+  cursor: pointer;
+  z-index: 10;
+
+  span {
+    width: 40px;
+    height: 2px;
+    display: block;
+    background: #fff;
+    margin-bottom: 6px;
+    transition: .4s ease;
+
+    &:nth-child(1) {
+
+      &.line-1 {
+        width: 40px;
+        transform: translateX(21px) translateY(3px) rotateZ(133deg);
+      }
+    }
+
+    &:nth-child(2) {
+      width: 30px;
+      margin-left: 10px;
+
+      &.line-2-hidden {
+        display: none;
+      }
+    }
+    &:nth-child(3) {
+      width: 19px;
+      margin-left: 21px;
+
+      &.line-3 {
+        width: 40px;
+        transform: translateX(0px) translateY(-5px) rotateZ(-137deg);
+
+      }
+    }
+  }
+}
+
+//menu
 .header__menu {
   padding-top: 50px;
 }
@@ -340,7 +423,7 @@ ul {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top;
-  height: 580px;
+  height: 785px;
   padding-top: 70px;
   margin-top: 100px;
 
@@ -436,7 +519,7 @@ ul {
 }
 
 .input__email {
-  margin-left: 42px;
+  margin-left: 37px;
   margin-bottom: 30px;
 }
 
@@ -463,6 +546,42 @@ ul {
     border: 1px solid darken($text-color, 90%);
     box-shadow: 0 2px 3px $text-color;
     color: darken($text-color, 90%);
+  }
+}
+
+//copyright  and  social
+.copyright__social {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.copyright {
+  p {
+    color: $text-color;
+    @include light;
+    font-size: 15px;
+    line-height: 22px;
+  }
+}
+
+.social {
+  display: flex;
+}
+
+.social__icons {
+  border: 1px solid $text-color;
+  margin-right: 25px;
+
+  &:hover {
+    border-radius: 5px;
+    box-shadow: 0 2px 3px $text-color;
+  }
+
+  img {
+    padding: 10px 21px;
   }
 }
 

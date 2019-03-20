@@ -8,16 +8,34 @@
 </head>
 <body>
 
-<header class="header">
+<header class="header" id="home">
+
+    <!-- hamburger-menu  -->
+    <div class="header__menu-burger" id="header__menu-burger">
+        <span id="line-1"></span>
+        <span id="line-2"></span>
+        <span id="line-3"></span>
+    </div>
+    <!--mobile - menu-->
+    <div class="mobile-menu" id="mobile-menu">
+        <ul class="mobile__menu-list js-scroll">
+            <li class="menu__list-item"><a href="#home" class="menu__list-link">Home</a></li>
+            <li class="menu__list-item"><a href="#specials" class="menu__list-link">Specials</a></li>
+            <li class="menu__list-item"><a href="#about" class="menu__list-link">About us</a></li>
+            <li class="menu__list-item"><a href="#menu" class="menu__list-link">Menu</a></li>
+            <li class="menu__list-item"><a href="#contact" class="menu__list-link">Contact</a></li>
+        </ul>
+    </div>
+
     <div class="wrapper">
         <!--header-menu-->
         <div class="header__menu">
-            <ul class="menu__list">
-                <li class="menu__list--item"><a href="#" class="menu__list--link">Home</a></li>
-                <li class="menu__list--item"><a href="#" class="menu__list--link">Specials</a></li>
-                <li class="menu__list--item"><a href="#" class="menu__list--link">About</a></li>
-                <li class="menu__list--item"><a href="#" class="menu__list--link">Menu</a></li>
-                <li class="menu__list--item"><a href="#" class="menu__list--link">Contact</a></li>
+            <ul class="menu__list js-scroll">
+                <li class="menu__list--item"><a href="#home" class="menu__list--link">Home</a></li>
+                <li class="menu__list--item"><a href="#specials" class="menu__list--link">Specials</a></li>
+                <li class="menu__list--item"><a href="#about" class="menu__list--link">About</a></li>
+                <li class="menu__list--item"><a href="#menu" class="menu__list--link">Menu</a></li>
+                <li class="menu__list--item"><a href="#contact" class="menu__list--link">Contact</a></li>
             </ul>
         </div>
         <!--header -title-->
@@ -58,7 +76,7 @@
 </section>
 
 <!--  section   specials     -->
-<div class="wrapper">
+<div class="wrapper" id="specials">
     <section class="specials">
         <h2>This month specials</h2>
         <!--   block special  top   -->
@@ -135,7 +153,7 @@
 </div>
 
 <!--  section about us  -->
-<section class="about_us">
+<section class="about_us" id="about">
     <div class="wrapper">
         <div class="wrap__about">
             <div class="about__title">
@@ -152,8 +170,9 @@
 </section>
 
 <!--   tabs   section   -->
+
 <div class="wrapper">
-    <div class="tabs__section">
+    <div class="tabs__section" id="menu">
         <h2>Menu</h2>
         <!--  tabs -->
         <div class="tabs">
@@ -235,7 +254,7 @@
 </div>
 
 <!--  section    footer    -->
-<footer class="footer">
+<footer class="footer" id="contact">
     <div class="wrapper">
         <h2>Contact</h2>
 
@@ -264,23 +283,19 @@
                     <button class="form__button">Send</button>
                 </form>
             </div>
+
+        <!--copyright and social icons -->
+        <div class="copyright__social">
+            <div class="copyright">
+                <p>Copyright 2019 &copy; by AppaDadej</p>
+            </div>
+            <div class="social">
+                <a href="#" class="social__icons"><img src="src/img/facebook.png" alt=""></a>
+                <a href="#" class="social__icons"><img src="src/img/instagram.png" alt=""></a>
+            </div>
+        </div>
         </div>
 </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 <script src="build/js/all.js"></script>
 

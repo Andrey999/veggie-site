@@ -1,6 +1,13 @@
 /*   less  1200px     */
-@media screen and (max-width: 1600px) {
+@media screen and (max-width: 1800px) {
+  // mobile   menu
+  .header__menu-burger {
+    display: none;
+  }
 
+  .mobile-menu{
+    display: none;
+  }
 }
 
 /*   less  1200px     */
@@ -22,8 +29,50 @@
   }
 
   //section  specials
-  .specials__menu-top {
-    
+  .specials h2:after {
+    left: 352px;
+  }
+
+  .specials__menu-top,
+  .specials__menu-bottom {
+    flex-wrap: wrap;
+  }
+
+  //section  about_us
+  .about_us {
+    margin-top: 150px;
+  }
+
+  .about__title h2:after {
+    left:95px;
+  }
+
+  .about__image {
+    background-size: 515px;
+    width: 545px;
+    height: 546px;
+    background-position: -2px 25px;
+  }
+
+  .signature {
+    background-position: 154px 4px;
+  }
+
+  //footer
+  .footer h2 {
+    padding-right: 125px;
+  }
+
+  .contacts__title:first-child {
+    padding-right: 40px;
+  }
+
+  .form__wrapper {
+    width: 44%;
+  }
+
+  .input__email {
+    margin-left: 36px;
   }
 }
 
@@ -33,9 +82,21 @@
   .wrapper {
     width: 750px;
   }
+
+  //  mobile  menu
+  .header__menu-burger {
+    display: block;
+  }
+
+  .mobile-menu{
+    display: block;
+  }
+
   //  header
   .header {
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
   }
 
   .header__menu {
@@ -43,7 +104,7 @@
   }
 
   .header__title {
-    margin-top: 0;
+    margin-top: 80px;
 
     h1 {
       font-size: 30px;
@@ -52,16 +113,102 @@
 
   //  section columns
   .columns {
-    margin-top: -210px;
     padding: 50px 10px;
   }
 
   //section  specials
-  .specials__menu-top {
+  .specials {
+    margin-top: 50px;
+  }
+
+  .specials__menu-top,
+  .specials__menu-bottom {
     flex-wrap: wrap;
   }
 
+  .specials h2 {
+    margin-bottom: 115px;
+  }
+
+  .specials h2:after {
+    left: 262px;
+  }
+
+  //section about us
+  .about_us {
+    margin-top: 125px;
+  }
+
+  .wrap__about {
+    flex-direction: column-reverse;
+  }
+
+  .about__image {
+    background-size: 100%;
+    width: 100%;
+    height: 600px;
+  }
+
+  .about__title {
+    width: 100%;
+  }
+
+  .about__title h2 {
+    margin: 0 0 90px;
+  }
+
+  .about__title h2:after {
+    top: 670px;
+    left: 245px;
+  }
+  .signature {
+    background-position: center;
+  }
+
+  //  section  tabs
+  .tabs__content-list {
+    flex-direction: column;
+  }
+
+  .tabs__content-left-content,
+  .tabs__content-right-content {
+    text-align: center;
+  }
+
+  //footer
+  .footer {
+    height: 912px;
+    background-position: top;
+  }
+
+  .footer h2 {
+    padding-right: 80px;
+  }
+
+  .contacts__wrapper {
+    display: block;
+    width: 30%;
+    margin-left: auto;
+  }
+
+  .contacts__title{
+    padding-bottom: 10px;
+  }
+
+  .form__wrapper {
+    width: 50%;
+  }
+
+  .input__email {
+    margin-left: 30px;
+  }
 }
+
+
+
+
+
+
 
 /*   less  768px     */
 @media screen and (max-width: 768px) {
@@ -71,24 +218,24 @@
 
   //header
   .header {
-    height: 400px;
+    min-height: 550px;
+  }
+
+  .header__title {
+    margin-top: 30px;
   }
 
   .header__title {
     h1 {
-      font-size: 22px;
+      font-size: 27px;
     }
   }
 
   .header__title:after {
-    left: 48%;
+    left: 44%;
   }
 
   //  section columns
-  .columns {
-    margin-top: -300px;
-  }
-
   .columns__item {
     width: 28%;
   }
@@ -96,6 +243,86 @@
   .columns__item h2 {
     white-space: nowrap;
   }
+
+  //section  specials
+  .specials {
+    text-align: center;
+  }
+
+  .specials__menu-top,
+  .specials__menu-bottom {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  .specials h2:after {
+    left: 170px;
+  }
+
+  .specials__image img {
+    display: block;
+  }
+
+  .specials__descr {
+    background-color: #fff;
+  }
+
+  //section about us
+  .about_us {
+    margin-top: 930px;
+  }
+
+  .about__image {
+    height: 495px;
+  }
+
+  .about__title h2:after {
+    top: 565px;
+    left: 165px;
+  }
+
+  //  section  tabs
+  .tabs {
+    white-space: nowrap;
+  }
+
+  .tabs__buttons {
+    font-size: 21px;
+    padding: 14px 20px;
+  }
+
+  //footer
+  .footer {
+    height: 962px;
+  }
+
+  .footer h2:after {
+    left: 72%;
+  }
+
+  .contacts__wrapper {
+    width: 40%;
+  }
+
+  .form__wrapper {
+    width: 45%;
+  }
+
+  .form__wrapper h3 {
+    text-align: center;
+  }
+
+  .input__name {
+    margin-bottom: 20px;
+  }
+
+  .input__email, .input__message, .input__name {
+    display: block;
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+  }
+
 
 }
 
@@ -106,14 +333,15 @@
   }
 //  header
   .header {
-    height: 450px;
+    height: 430px;
+    min-height: 430px;
   }
 
   .header__title {
-    margin-top: -60px;
+    margin-top: 0;
 
     h1 {
-      font-size: 18px;
+      font-size: 20px;
     }
   }
 
@@ -121,19 +349,80 @@
     left: 42%;
   }
   //  section columns
-  .columns {
-    margin-top: -360px;
-  }
-
   .columns__wrapper {
     display: block;
+    padding: 30px 20px;
   }
 
   .columns__item {
     width: 100%;
     padding: 20px;
   }
+
+  .specials h2:after {
+    left: 115px;
+  }
+
+  //section about us
+  .about__image {
+    height: 400px;
+  }
+
+  .about__title h2:after {
+    top: 470px;
+    left: 100px;
+  }
+
+  //  section tabs
+  .tabs__buttons {
+    font-size: 18px;
+    padding: 14px 14px;
+  }
+
+  //footer
+  .footer {
+    background-position: right;
+  }
+
+  .footer h2 {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .footer h2:after {
+    left: 52%;
+  }
+
+  .form{
+    justify-content: flex-start;
+  }
+  .contacts__wrapper {
+    width: 65%;
+  }
+
+  .contacts__title{
+    padding-bottom: 10px;
+  }
+
+  .form__wrapper {
+    width: 90%;
+  }
+
+  .input__email {
+    margin-left: 0;
+  }
+
+  .social {
+    margin-bottom: 15px;
+  }
+
+  .copyright__social {
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+  }
 }
+
+
 
 /*   less  479px     */
 @media screen and (max-width: 479px) {
@@ -141,12 +430,16 @@
     width: 100%;
   }
 //header
+  .header {
+    background-position: -205px 0px;
+  }
+
   .header__title {
-    margin-top: -70px;
+    margin-top: -5px;
     padding: 0 0 0 140px;
 
     h1 {
-      font-size: 16px;
+      font-size: 19px;
     }
   }
 
@@ -155,8 +448,42 @@
   }
 
   //  section columns
-  .columns {
-    margin-top: -440px;
+  .specials h2 {
+    margin-bottom: 50px;
+  }
+
+  .specials h2:after {
+    display: none;
+  }
+
+  //section about us
+  .about__image {
+    height: 350px;
+  }
+
+  .about__title h2 {
+    margin: 0 0 50px;
+  }
+
+  .about__title h2:after {
+    display: none;
+  }
+
+  //section  tabs
+  .tabs {
+    display: block;
+    padding: 5px 55px;
+  }
+
+  .tabs__buttons {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  //footer
+  .contacts__wrapper {
+    width: 78%;
   }
 }
 
