@@ -3,15 +3,14 @@
 @import "mixin";
 //@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,500);
 
-//html, body {
-//  overflow-x: hidden;
-//}
+html, body {
+  overflow-x: hidden;
+}
 
 body {
   //font-family: 'Roboto', sans-serif;
   font-size: 16px;
   box-sizing: border-box;
-  overflow-x: hidden;
 }
 
 a {
@@ -100,13 +99,14 @@ ul {
     width: 40px;
     height: 2px;
     display: block;
-    background: #fff;
+    background: $text-color;
     margin-bottom: 6px;
     transition: .4s ease;
 
     &:nth-child(1) {
 
       &.line-1 {
+        background: #fff;
         width: 40px;
         transform: translateX(21px) translateY(3px) rotateZ(133deg);
       }
@@ -125,6 +125,7 @@ ul {
       margin-left: 21px;
 
       &.line-3 {
+        background: #fff;
         width: 40px;
         transform: translateX(0px) translateY(-5px) rotateZ(-137deg);
 
@@ -392,7 +393,7 @@ ul {
 
 .tabs__content {
   margin-top: 40px;
-  height: 250px;
+  height: 350px;
   overflow: hidden;
 }
 
@@ -425,7 +426,7 @@ ul {
   background-position: top;
   height: 785px;
   padding-top: 70px;
-  margin-top: 100px;
+  margin-top: 30px;
 
 
   h2 {
