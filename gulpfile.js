@@ -25,6 +25,7 @@ const plumberOptions = {
 //  записываем в переменную какие css файлы будем обрабатывать
 const sassAllFiles = [
     'node_modules/normalize.css/normalize.css',
+    'node_modules/wowjs/css/libs/animate.css',
     './src/scss/style.scss'
 ];
 
@@ -46,6 +47,8 @@ function sassStyles() {
 
 //  записываем в переменную какие js файлы будем обрабатывать
 const jsFiles = [
+    'node_modules/jquery/dist/jquery.js',
+    'node_modules/wowjs/dist/wow.js',
     './src/js/main.js'
 ];
 

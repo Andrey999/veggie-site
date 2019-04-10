@@ -45,5 +45,23 @@ window.onload = function() {
         }
     }
 
+    /////////////// parallax  image  ////////////////////
+    const parallax = () => {
+        let wScroll = $(window).scrollTop(); // записываем в переменную  прокрутку сверху
+        $('.parallax--bg').css('background-position', 'center ' + (wScroll *0.85) + 'px'); //прокручиваем картинку по х: center | y = (wScroll *0.75);
+    };
+
+    $(window).scroll(() => {  // при прокрутке вызываем функцию parallax
+        parallax();
+
+        if ($(window).scrollTop()) { //  если есть прокрутка
+            $(".header").addClass('active-header');  //  добавляем класс
+        }
+        else { $(".header").removeClass('active-header'); }  // удаляем класс
+    });
+
+    /////////  init  plugin  wow.js  /////////////////
+    new WOW().init();
+
 };
 
