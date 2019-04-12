@@ -426,8 +426,6 @@ ul {
   background-position: top;
   height: 785px;
   padding-top: 70px;
-  margin-top: 30px;
-
 
   h2 {
     text-align: right;
@@ -585,5 +583,13 @@ ul {
     padding: 10px 21px;
   }
 }
+
+////////////  google map  ///////////////////
+.map {
+  width: 100%;
+  height: 570px;
+  margin-bottom: -15px;
+}
+
 
 @import "./media.scss";
